@@ -63,7 +63,6 @@ main{
 
 header{
   background-color:#fff5fc;
-  /* border-radius: 6.5px; */
   height: 85px;
 } 
 
@@ -123,7 +122,6 @@ nav{
 
 .texto h1{
     font-size: xx-large;
-
 }
 
 .derivada {
@@ -232,7 +230,7 @@ button:focus {
   }
   
 /* Estilo para telas menores que 768px */
-@media (max-width: 850px) {
+@media (min-width: 850px) {
   .derivada {
     flex-direction: column;
     margin-left: 20%;
@@ -245,24 +243,46 @@ button:focus {
     margin-left: 20%;
     margin-right: 20%;
     width: 60%;
-  };
+  }
+
+  header{
+
+    height: 7%;
+    max-height: 100vh;
+  }
+
+  /* Id para o logo */
+#logo{
+  margin-top: 15px;
+  width: 100px;
+  padding: 10px;
+  height: 100px;
 }
 
-@media (max-width: 850px) {
+.nav-links{
+  /* padding: 5px 25px; */
+  font-size:100%;
+  margin-left: auto;
+  height: fit-content;
+}
+
+}
+
+@media (min-width: 850px) {
    button {
      width: 80%;
   };
 }
 
-@media (max-width:850px){
+@media (min-width:850px){
 .texto p{
-  font-size: 0.9rem;
+  font-size: 1rem;
   };
 }
   
-@media (max-width:850px){
+@media (min-width:850px){
   p .span{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
