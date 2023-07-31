@@ -1,0 +1,273 @@
+/* Css para editar as classes e ids do site */
+
+/* Definições gerais do site */
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    box-sizing: border-box;
+}
+
+body{
+  min-height:100vh;
+  min-width: 100vw;
+  display: flex;
+}
+
+h1{
+    color: rgb(195, 208, 228);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: xx-large;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+a{
+  color:floralwhite;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+p{
+    color: rgb(195, 208, 228);
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+li{
+ color: floralwhite;
+ display: inline-flex;
+ margin:  15px 20px;
+ justify-content: space-between;    
+} 
+
+/* --------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* classe Principal do site e das divs */
+main{
+    height: auto;
+    padding:0% 0.1%;
+    background-image: url(fundo1.jpg);
+}
+
+header{
+  background-color:#fff5fc;
+  /* border-radius: 6.5px; */
+  height: 85px;
+} 
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Id para o logo */
+#logo{
+    width: 100px;
+    padding: 26px;
+    height: 100px;
+}
+
+/* h2{
+    display: flex;
+    align-items: center;
+    color: blueviolet;
+    margin-left: 20px;
+} */
+
+.nav-links{
+    padding: 5px 25px;
+    margin-left: auto;
+    height: fit-content;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin:  0 20px;   
+}
+
+.nav-links li .fa {
+    color: rgb(195, 208, 228);
+    font-size: 30px;
+    line-height: 60px;
+    transition: .5s;
+    bottom: auto;
+}
+
+.nav-links li .fa:hover{
+    color:rgb(230, 129, 146);
+}
+
+.nav-2{
+  background-color: rgb(195, 208, 228);
+  border-radius: 2px;
+  height: 50px;
+}
+
+.texto{
+    font-size: large;
+    padding-left: 2%;
+}
+
+.texto h1{
+    font-size: xx-large;
+
+}
+
+.derivada {
+  text-align: center;
+  background-color: rgb(195, 208, 228);
+  border-radius: 12px;
+  display: flex;
+  margin-left: 32%;
+  margin-right: 35%;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+  width: 35%; 
+}
+
+.box{
+  display: flex;
+  width: 40%;
+  margin-left: 8%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#erro{
+  position: fixed;
+  margin-top: 50px;
+}
+
+#funcao{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-radius: 8px;
+  border-color:rgb(230, 129, 146);
+}
+
+label {
+  color:rgb(180, 91, 105);
+  font-size: large;
+  font-weight: bolder;
+  margin-right: 1%; /* Ajuste a margem direita conforme necessário */
+  margin-left: 5%;
+}
+
+input[type="text"] {
+  margin-left: 30px; /* Ajuste a margem esquerda conforme necessário */
+}
+
+input::placeholder{
+    color: rgb(6, 6, 7);
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+button{
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: rgb(230, 129, 146);
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 87%;
+  height: 44px;
+  line-height: 1;
+  margin: 12px 0 0;
+  margin-left: 30px;
+  outline: none;
+  overflow: hidden;
+  padding: 0 15px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20%;
+}
+
+button{
+  cursor: default;
+}
+
+button:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.passo-a-passo {
+    background-color: rgb(195, 208, 228);
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 35%;
+    margin-top: 20px;
+    width: 40%;
+    border-radius: 12px;
+    text-align: left;
+  }
+  
+  .etapa {
+    margin-bottom: 10px;
+  }
+  
+/* Estilo para telas menores que 768px */
+@media (max-width: 850px) {
+  .derivada {
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  }
+
+  .passo-a-passo{
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+  };
+}
+
+@media (max-width: 850px) {
+   button {
+     width: 80%;
+  };
+}
+
+@media (max-width:850px){
+.texto p{
+  font-size: 0.9rem;
+  };
+}
+  
+@media (max-width:850px){
+  p .span{
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  };
+}
+
+  
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de Derivada</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.js"></script>
+	<script id="MathJax-script" async
+	src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'><link rel="stylesheet" href="./style2.css">
+	<link rel="stylesheet" type="text/css"
+    href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<main>
+		<header>
+			<nav>
+				<img src="Logo.png" id="logo">
+				<!-- <h2> Site Derivada  </h2> -->
+				<ul class="nav-links">
+					<li> <a href="https://www.youtube.com/@tridev6283" target="_blank"> <i class = "fa fa-youtube"></i> </a></li>
+					<li> <a href="https://www.youtube.com/@tridev6283" target="_blank"><i class = "fa fa-instagram"></i> </a></li>
+					<li><a href="https://github.com/Hugox96/Site_Derivada" target="_blank"> <i class  = "fa fa-github"></i> </a> </li>
+				</ul>
+			</nav>
+		</header>
+		<div class="nav-2">
+			<ul>
+				<li><a href="#home">Regra do Produto</a></li>
+				<li><a href="#news">Regra do Quociente</a></li>
+			  </ul>
+		</div>	
+	<article class="texto"> <br>
+			<h1> O que é uma derivada ? </h1> <br>
+			<p> A  derivada  é representada por uma nova função, chamada de função derivada ou simplesmente derivada, 
+				que fornece informações sobre a inclinação da curva da função original em cada ponto. 
+				Ela nos diz se a função está <span style="color:rgb(230, 129, 146);"> aumentando ou diminuindo </span> em um determinado ponto, e qual é a taxa de variação nesse ponto.
+				A derivada pode ser interpretada geometricamente como a <span style="color:rgb(230, 129, 146);">inclinação da reta tangente </span> à curva da função em um determinado ponto.
+				Ela possui muitas aplicações práticas em várias áreas, como física, engenharia, economia e ciências naturais. </p> <br>
+	</article>
+			<h1> Calculadora </h1> <br>
+	<div class="derivada">
+			<!-- <h1> Calculadora de Derivada</h1> -->
+			<label for="funcao">Função:</label>
+			<div class="box">
+				<input type="text" id="funcao" placeholder="Ex: 2x + 1">
+				<p id="erro"></p>
+			</div>
+			<button onclick="calcularDerivada()">Calcular</button>		
+	</div>
+	
+	<div class="passo-a-passo">
+		<h3>Passo a Passo</h3>
+		<div class="etapas">
+		  <!-- Aqui serão adicionadas as etapas do passo a passo -->
+		</div>
+	</div>	  
+ </main>
+</body>
+</html>
