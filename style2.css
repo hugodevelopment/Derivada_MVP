@@ -229,6 +229,11 @@ button:focus {
   }
   
 @media (max-width: 450px) {
+
+  main{
+    height: 100%;
+    max-width: 100vh;
+}
   .derivada,
   .passo-a-passo {
     flex-direction: column;
@@ -257,7 +262,7 @@ button:focus {
   #logo {
     margin-top: 2px;
     width: 100px;
-    padding: 20px;
+    padding: 15px;
     height: 100px;
   }
 
