@@ -123,6 +123,18 @@ nav{
     font-size: xx-large;
 }
 
+.contato{
+  margin-left: 40%;
+  text-align: center;
+  width: 20%;
+  background-color: rgb(195, 208, 228);
+  border-radius: 12px;
+}
+
+#whatsapp{
+  color: rgb(230, 129, 146);
+}
+
 .derivada {
   text-align: center;
   background-color: rgb(195, 208, 228);
@@ -140,6 +152,7 @@ nav{
   display: flex;
   width: 40%;
   margin-left: 8%;
+  margin-top: 5%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
