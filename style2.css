@@ -267,6 +267,19 @@ button:focus {
     margin-bottom: 5%;
   }
 
+  #whatsapp{
+    color: rgb(230, 129, 146);
+    font-size: larger;
+  }
+
+  .contato{
+    margin-left: 25%;
+    text-align: center;
+    width: 47%;
+    background-color: rgb(29, 55, 94);
+    border-radius: 12px;
+  }
+
   label{
     margin-bottom: 3%;
   }
