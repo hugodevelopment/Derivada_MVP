@@ -25,6 +25,11 @@ h1{
     font-size: xx-large;
 }
 
+h2{
+  color:rgb(230, 129, 146);
+  text-align: center;
+}
+
 h3 {
   font-size: 20px;
   font-weight: bold;
@@ -240,8 +245,29 @@ button:focus {
   .etapa {
     margin-bottom: 10px;
   }
+ 
+  /*-------------------------------------------------------- Estilo para a paginas de regras -------------------------------------------------------  */
+  main-regras{
+    height: auto;
+    padding:0% 0.1%;
+    background-color: rgb(79, 79, 179);
+  }
+
+  .texto-regras{
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: justify;
+}
+
+.texto-regras h1{
+    font-size: xx-large;
+}
+
+.texto-regras p{
+  font-size: 1rem; /* Ajuste o valor conforme necessário */
+}
   
-  /* Adicionando responsividade */
+  /* ----------------------------------------------------------- Adicionando responsividade ------------------------------------------------*/
 @media (max-width: 450px) {
   
   /* Reponsividade para a tela em celulares */
@@ -333,4 +359,18 @@ button:focus {
     flex-direction: column;
     justify-content: center;
   }
+/* Responsividade para a pagina de regras */
+  main-regras{
+    height: 100%;
+    max-width: 100vh;
+}
+
+.texto-regras{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.texto-regras p{
+  font-size: small;
+}
 }
