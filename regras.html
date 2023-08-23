@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.js"></script>
-	<script id="MathJax-script" async
-	src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
+	<script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'><link rel="stylesheet" href="./style2.css">
 	<link rel="stylesheet" type="text/css"
     href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">	<script type="text/javascript" src="script.js"></script>
@@ -45,28 +45,43 @@
                 <p>Imagine que você está andando de bicicleta, e você quer saber o quanto sua velocidade está mudando a cada momento. 
                    A derivação é como calcular essa mudança de velocidade.
                     Pense na velocidade do carro em relação ao tempo. A derivada dessa função é a aceleração, que ajuda os engenheiros a entender 
-                    como o carro vai ganhar ou perder velocidade, importante para a segurança do carro.</p>
+                    como o carro vai ganhar ou perder velocidade, importante para a segurança do carro.</p> <br>
 
                 
                 <h2><strong> Regra da soma e subtração </strong> </h2>
                 <p> Quando você tem duas funções somando ou subtraindo, a derivada é bem simples: 
                     Soma-se ou subtrai as funções de forma independente para se chegar ao resultado. 
                     Por exemplo, se você tem: \[f(x) = 5x + 3x\] </p>
-                    <p> Se temos \(h(x) = 5x + 3x\), derivamos \(5x\) para \(5\) e \(3x\) para \(3\)
-						Depois, somamos as derivadas: \(h(x)' = 5 + 3 = 8\)
+                    <p> derivamos \(5x\) para \(5\) e \(3x\) para \(3\),
+						Depois, somamos as derivadas: \[h(x)' = 5 + 3 = 8\]
                         De forma geral é: \[f(x) \pm g(x)' = f(x)' \pm g(x)'\] </p>
 
-				<h2><strong> Regra do produto </strong> </h2>
+				<h2><strong> Regra do Produto </strong> </h2>
 				<p>A regra do produto é uma das mais importantes, por exemplo, considere uma função abaixo: \[f(x) = x^2 \cdot \sin(x)\]
 					Para derivar essa função, aplicamos a regra do produto:
-					\[f(x)' = (x^2)' \cdot \sin(x) + x^2 \cdot (\sin(x))'\]
+					\[f(x)' = x^2 \cdot \sin(x) + x^2 \cdot \sin(x)'\]
 					\[f(x)' = 2x \cdot \sin(x) + x^2 \cdot \cos(x)\]
 					Resumindo é: derivar a 1º função(\(x^2\)) vezes a segunda(\(sin(x)\)) somando ou subtraindo com a derivada da 2º função vezes a primeira. </p>
 					
 					<p>De forma geral, a regra do produto pode ser expressa como:</p> <br>
 					<p>\[f(x) \cdot g(x)' = f(x)' \cdot g(x) + f(x) \cdot g(x)'\]</p>
-                
-	</article>
+
+				<h2> <strong> Regra do Quociente </strong> </h2>
+				
+					<p>A regra do quociente é útil para calcular a derivada de funções que estão divididas uma pela outra.
+						Ela nos ajuda a entender como as mudanças em uma função afetam a taxa de mudança da outra função.</p>
+						
+						<p>Por exemplo, considere:  \[f(x) = \frac{x^2}{\sin(x)}\]
+						Para derivar essa função usando a regra do quociente,
+						precisamos calcular as derivadas das funções no numerador (\(x^2\)) e no denominador (\(\sin(x)\)).</p>
+						
+						<p>Aplicando a regra do quociente, a derivada de \(f(x)\) é calculada como:
+						\[f(x)' = \frac{(x^2)' \cdot \sin(x) - x^2 \cdot (\sin(x))'}{\sin^2(x)}\]
+						\[f(x)' = \frac{2x \cdot \sin(x) - x^2 \cdot \cos(x)}{\sin^2(x)}\] </p>
+						
+						<p>Essa fórmula resultante é a derivada da função \(f(x)\) e nos permite entender como as mudanças
+						nas funções \(x^2\) e \(\sin(x)\) afetam a taxa de mudança de \(f(x)\).</p>		   
+	</article> <br>
 
 	
 
