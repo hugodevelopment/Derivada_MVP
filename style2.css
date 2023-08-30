@@ -250,7 +250,7 @@ button:focus {
   main-regras{
     height: auto;
     padding:0% 0.1%;
-    background-color: rgb(79, 79, 179);
+    background-color: rgb(255, 255, 255);
   }
 
   .texto-regras{
@@ -261,10 +261,12 @@ button:focus {
 
 .texto-regras h1{
     font-size: xx-large;
+    color:rgb(230, 129, 146);
 }
 
 .texto-regras p{
-  font-size: 1rem; /* Ajuste o valor conforme necessário */
+  font-size: 1rem;
+  color: black; /* Ajuste o valor conforme necessário */
 }
   
   /* ----------------------------------------------------------- Adicionando responsividade ------------------------------------------------*/
@@ -359,7 +361,7 @@ button:focus {
     flex-direction: column;
     justify-content: center;
   }
-/* Responsividade para a pagina de regras */
+/* --------------------------------------------- Responsividade para a pagina de regras ------------------------------------------------- */
   main-regras{
     height: 100%;
     max-width: 100vh;

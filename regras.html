@@ -43,25 +43,24 @@
 
                 <h2>O que é Derivação?</h2>
                 <p>Imagine que você está andando de bicicleta, e você quer saber o quanto sua velocidade está mudando a cada momento. 
-                   A derivação é como calcular essa mudança de velocidade.
-                    Pense na velocidade do carro em relação ao tempo. A derivada dessa função é a aceleração, que ajuda os engenheiros a entender 
-                    como o carro vai ganhar ou perder velocidade, importante para a segurança do carro.</p> <br>
+                   A derivação é como calcular essa mudança de velocidade, o que chamamos de aceleração.
+                   A derivada da função velocidade é a <span style="color:rgb(230, 129, 146);"> aceleração </span>, que a bicicleta está sofrendo.</p> <br>
 
                 
                 <h2><strong> Regra da soma e subtração </strong> </h2>
                 <p> Quando você tem duas funções somando ou subtraindo, a derivada é bem simples: 
-                    Soma-se ou subtrai as funções de forma independente para se chegar ao resultado. 
-                    Por exemplo, se você tem: \[f(x) = 5x + 3x\] </p>
+                    <span style="color:rgb(230, 129, 146);">Soma-se ou subtrai as funções de forma independente</span> para se chegar ao resultado. 
+                    Por exemplo, se temos: \[f(x) = 5x + 3x\] </p>
                     <p> derivamos \(5x\) para \(5\) e \(3x\) para \(3\),
-						Depois, somamos as derivadas: \[h(x)' = 5 + 3 = 8\]
+						Depois, <span style="color:rgb(230, 129, 146);">somamos as derivadas:</span> \[h(x)' = 5 + 3 = 8\]
                         De forma geral é: \[f(x) \pm g(x)' = f(x)' \pm g(x)'\] </p>
 
 				<h2><strong> Regra do Produto </strong> </h2>
 				<p>A regra do produto é uma das mais importantes, por exemplo, considere uma função abaixo: \[f(x) = x^2 \cdot \sin(x)\]
 					Para derivar essa função, aplicamos a regra do produto:
-					\[f(x)' = x^2 \cdot \sin(x) + x^2 \cdot \sin(x)'\]
+					\[f(x)' = (x^2)' \cdot \sin(x) + x^2 \cdot \sin(x)'\]
 					\[f(x)' = 2x \cdot \sin(x) + x^2 \cdot \cos(x)\]
-					Resumindo é: derivar a 1º função(\(x^2\)) vezes a segunda(\(sin(x)\)) somando ou subtraindo com a derivada da 2º função vezes a primeira. </p>
+					Resumindo é: <span style="color:rgb(230, 129, 146);">derivar</span> a 1º função(\(x^2\)) <span style="color:rgb(230, 129, 146);"> vezes </span> a 2º função (\(sin(x)\)) mais a derivada da 2º função(\(sin(x)\)) vezes a 1º função. </p>
 					
 					<p>De forma geral, a regra do produto pode ser expressa como:</p> <br>
 					<p>\[f(x) \cdot g(x)' = f(x)' \cdot g(x) + f(x) \cdot g(x)'\]</p>
@@ -69,10 +68,10 @@
 				<h2> <strong> Regra do Quociente </strong> </h2>
 				
 					<p>A regra do quociente é útil para calcular a derivada de funções que estão divididas uma pela outra.
-						Ela nos ajuda a entender como as mudanças em uma função afetam a taxa de mudança da outra função.</p>
+						Ela nos ajuda a entender como as mudanças em uma função afetam a taxa de mudança da outra função.
+						Por exemplo, considere:  \[f(x) = \frac{x^2}{\sin(x)}\] </p>
 						
-						<p>Por exemplo, considere:  \[f(x) = \frac{x^2}{\sin(x)}\]
-						Para derivar essa função usando a regra do quociente,
+						<p> Para derivar essa função usando a regra do quociente,
 						precisamos calcular as derivadas das funções no numerador (\(x^2\)) e no denominador (\(\sin(x)\)).</p>
 						
 						<p>Aplicando a regra do quociente, a derivada de \(f(x)\) é calculada como:
@@ -83,27 +82,11 @@
 						nas funções \(x^2\) e \(\sin(x)\) afetam a taxa de mudança de \(f(x)\).</p>		   
 	</article> <br>
 
-	
 
 	<div class="contato">
 				<!-- <h1> Calculadora de Derivada</h1> -->
 				<a C href="whatsapp://send?text=Confira%20este%20site:%20https%3A%2F%2Fseusite.com"  target="_blank" id="whatsapp"> <i class = "fa fa-whatsapp" title=" C WhatsApp"> </i> Mande para seu amigo! </a>
 	</div>	<br>	
-
-	<!-- <div class="derivada">
-			<label for="funcao">Função:</label>
-			<div class="box">
-				<input type="text" id="funcao" placeholder="Ex: 2x + 1">
-				<p id="erro"></p> <br>
-			</div>
-			<button onclick="calcularDerivada()">Calcular</button>		
-	</div> -->
-	
-	<!-- <div class="passo-a-passo">
-		<h3>Passo a Passo</h3>
-		<div class="etapas">
-		</div>
-	</div>	   -->
  </main>
 </body>
 </html>
