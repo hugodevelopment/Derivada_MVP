@@ -47,12 +47,20 @@ console.log(etapas);
 adicionarEtapas(etapas)
 } 
 
-// Função para criar as descrições das etapas na div
+
+//Função para criar as descrições das etapas na div
 function adicionarEtapas(etapas) {
   const etapasContainer = document.querySelector('.etapas');
-  //  etapasContainer.innerHTML = '';
 
-  // const etapas = tiposDeFuncao[tipoFuncao];
+  var removeButton = document.createElement("button");
+  removeButton.textContent = "Apagar";
+  removeButton.style.color = "blue";
+  removeButton.style.fontWeight="bold";
+  removeButton.onclick = function resetEtapas() {
+    etapasContainer.innerHTML = '';  // Limpa todo o conteúdo do container
+  }
+  etapasContainer.appendChild(removeButton);
+
   //Cada loop é uma criação de um elemento na div, sendo o 1º a div, depois o paragrafo e o span
   etapas.forEach((passo) => {
     const passoDiv = document.createElement('div');
@@ -62,7 +70,7 @@ function adicionarEtapas(etapas) {
     console.log(descricao)
     descricao.textContent = passo.descricao;
     descricao.style.color= "darkred";
-    descricao.style.fontWeight="bold"
+    descricao.style.fontWeight="bold";
     passoDiv.appendChild(descricao);
 
     if (passo.equacao) {
@@ -72,11 +80,54 @@ function adicionarEtapas(etapas) {
        equacao.innerHTML = `$$${passo.equacao}$$`;
       passoDiv.appendChild(equacao);
     }
+  
+etapasContainer.appendChild(passoDiv)});
 
-
- etapasContainer.appendChild(passoDiv)});
  // Após adicionar as etapas, renderize as equações usando MathJax
  MathJax.typesetPromise([etapasContainer])
- .catch((err) => console.log('Erro ao renderizar as equações:', err));
+ .catch((err) => console.log('Erro ao renderizar as equações:', err));}
+
+
+function resetEtapas() {
+  etapasContainer.innerHTML = '';  // Limpa todo o conteúdo do container
 }
 
+// ------------------------------------------ estudo -------------------------------------------------//
+
+
+// // Botão de remover
+  // var removeButton = document.createElement("button");
+  // removeButton.textContent = "Apagar";
+  // removeButton.style.color = "blue";
+  // // removeButton.margin="10%";
+  // removeButton.onclick = function () {
+  //     etapasContainer.remove();
+  // };
+  // etapasContainer.appendChild(removeButton);
+  
+// Botão de remover antes do loop, o problema é que apaga tudo e não volta o passo a passo
+// var removeButton = document.createElement("button");
+// removeButton.textContent = "Remover";
+// removeButton.style.color = "darkred";
+// removeButton.onclick = function () { 
+// removeTask(passoDiv);
+// };
+// passoDiv.appendChild(removeButton);
+
+// Jeito mais simples de fazer
+// var removeButton = document.createElement("button");
+// removeButton.textContent = "Apagar";
+// removeButton.style.color = "blue";
+// removeButton.onclick = function () {
+//     etapasContainer.remove();
+// };   
+// etapasContainer.appendChild(removeButton);
+
+// Aqui apagaria para cada passo já que está dentro do loop
+    // var removeButton = document.createElement("button");
+    // removeButton.textContent = "apaga";
+    // removeButton.style.color = "pink";
+    // removeButton.onclick = function () {
+    // container.remove();}   
+    // passoDiv.appendChild(removeButton);
+  
