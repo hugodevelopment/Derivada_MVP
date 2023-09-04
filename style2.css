@@ -391,6 +391,7 @@ button:focus {
 }
 
 .texto-regras p{
-  font-size: small;
+  /* Acredito ser uma boa fonte para melhorar a leitura das letras */
+  font-size: 1rem;
 }
 }
