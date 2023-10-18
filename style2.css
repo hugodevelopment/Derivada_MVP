@@ -284,13 +284,13 @@ h1{
 }
 
 h1:hover {
-    color:var(--color-neutral-10);
+    color:  rgb(230, 129, 146);;
     transition: all 0.8s;
 }
 
 /* Aqui modificamos o conteudo do div para criamos o footer */
 #div-conteudo {
-    background-color: var(--color-neutral-0);
+    background-color: rgb(5, 30, 68);
     /* display grid para estilziarmos o conteudo */
     display: grid;
     /* Aqui criamos 4 colunas com espaço de 1fr entre elas */
@@ -322,7 +322,7 @@ h1:hover {
 }
 
 .links-ul .footer-link:hover {
-    color: pink;
+    color: rgb(230, 129, 146);
     transition: all 0.8s;
 }
 
@@ -465,8 +465,8 @@ h1:hover {
     justify-content: center;
   }
 
-  
-   
+
+/*Responsividade para o footer  */
 #div-conteudo {
     grid-template-columns: repeat(1, 1fr);
     /* gap: 0.5rem; */
