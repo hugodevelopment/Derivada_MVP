@@ -317,7 +317,7 @@ h1:hover {
     /* direção da coluna no flex */
     flex-direction: column;
     /* espaçamento da coluna */
-    gap: 1rem;
+    gap: 1.5rem;
     list-style: none;
 }
 
