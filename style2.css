@@ -311,6 +311,11 @@ h1:hover {
     margin-left: 1rem;
 }
 
+#qrcode{
+  display: flex;
+  justify-content: center;
+}
+
 
 .links-ul {
     /* utilziando o flexbox para editar os links */
