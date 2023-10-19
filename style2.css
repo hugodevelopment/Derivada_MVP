@@ -271,6 +271,7 @@ button:focus {
 
 footer{
     width: 100%;
+    margin-top: 10%;
     color: var(--color-neutral-40);
 }
 
@@ -291,7 +292,7 @@ h1:hover {
 /* Aqui modificamos o conteudo do div para criamos o footer */
 #div-conteudo {
     background-color: rgb(5, 30, 68);
-    /* display grid para estilziarmos o conteudo */
+    /* display grid para estiliziarmos o conteudo */
     display: grid;
     /* Aqui criamos 4 colunas com espaço de 1fr entre elas */
     grid-template-columns: repeat(3, 1fr);
