@@ -311,6 +311,7 @@ h1:hover {
     margin-left: 1rem;
 }
 
+/* centralizando imagem */
 #qrcode{
   display: flex;
   justify-content: center;
