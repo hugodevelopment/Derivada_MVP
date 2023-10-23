@@ -293,6 +293,10 @@ h1:hover {
     padding: 2rem 2rem;
 }
 
+#div-conteudo p{
+  color:black;
+}
+
 #Quem-Somos{
     margin-left: 1rem;
 }
@@ -305,12 +309,13 @@ h1:hover {
     margin-left: 1rem;
 }
 
+
+
 /* centralizando imagem */
 #qrcode{
   display: flex;
   justify-content: center;
 }
-
 
 .links-ul {
     /* utilziando o flexbox para editar os links */
@@ -323,7 +328,7 @@ h1:hover {
 }
 
 .links-ul .footer-link:hover {
-    color: rgb(230, 129, 146);
+    color: black;
     transition: all 0.8s;
 }
 
