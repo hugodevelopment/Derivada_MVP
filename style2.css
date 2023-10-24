@@ -279,7 +279,7 @@ h1{
 }
 
 h1:hover {
-    color:  rgb(230, 129, 146);
+    color: rgb(230, 129, 146);
     transition: all 0.8s;
 }
 
@@ -297,6 +297,13 @@ h1:hover {
   color:black;
 }
 
+#div-conteudo h1:hover {
+  color:  black;
+  transition: all 0.8s;
+}
+
+
+
 #Quem-Somos{
     margin-left: 1rem;
 }
@@ -308,7 +315,6 @@ h1:hover {
 #Contribuiçao{
     margin-left: 1rem;
 }
-
 
 
 /* centralizando imagem */
