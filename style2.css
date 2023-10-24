@@ -119,6 +119,9 @@ nav{
   height: 50px;
 }
 
+.nav-2 ul li a:hover{
+  color: rgb(12, 53, 116);
+}
 
 
 .texto{
