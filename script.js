@@ -1,15 +1,38 @@
-//  Função para identificar os o tipo de função em relação ao input
- function identificarTipoFuncao(funcao) {
-   if (funcao.includes('sin') || funcao.includes('cos') || funcao.includes('tan')) {
-     console.log("ok")
-     return 'trigonometrica';
-  } else if (funcao.includes('x') || funcao.includes('x^')) {
+// Testando função de identificar com regex
+function identificarTipoFuncao(funcao) {
+  if (/sin|cos|tan/.test(funcao)) {
+    console.log("ok")
+    return 'trigonometrica';
+  } else if (/x|\^x/.test(funcao)) {
     console.log("Oi")
     return 'polinomial';
+  } else if (/\+|\-/.test(funcao) && /x/.test(funcao)) {
+    console.log("Oi")
+    return 'somadiferença';
   } else {
     return 'outro';
   }
 }
+
+
+//  Função para identificar os o tipo de função em relação ao input
+//  function identificarTipoFuncao(funcao) {
+//    if (funcao.includes('sin') || funcao.includes('cos') || funcao.includes('tan')) {
+//      console.log("ok")
+//      return 'trigonometrica';
+//   } else if (funcao.includes('x') || funcao.includes('x^')) {
+//     console.log("Oi")
+//     return 'polinomial';
+//   } 
+//   // Testando uma função nova
+//   else if (funcao.includes('+') || funcao.includes('-') && funcao.includes('x')) {
+//     console.log("Oi")
+//     return 'somadiferença';
+//   }
+//   else {
+//     return 'outro';
+//   }
+// }
 
 
 function calcularDerivada() {
@@ -37,6 +60,10 @@ const tiposDeFuncao = {
   polinomial: [
     { descricao: 'Passo 1: Identifique a função polinomial', equacao: `f(x) = ${funcao}` },
     { descricao: 'Passo 2: Aplicar a regra dos polinomios', equacao: `f\'(x) = ${derivada.toString()}`  },
+  ],
+  somadiferença: [
+    { descricao: 'Passo 1: Identifique a função:', equacao: `f(x) = ${funcao}` },
+    { descricao: 'Passo 2: Aplicar a regra da soma e diferença', equacao: `f\'(x) = ${derivada.toString()}`  },
   ],
 };
 

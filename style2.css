@@ -121,6 +121,7 @@ nav{
 
 .nav-2 ul li a:hover{
   color: rgb(12, 53, 116);
+  transition: all 0.14s;
 }
 
 
