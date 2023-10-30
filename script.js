@@ -1,18 +1,40 @@
-// Testando função de identificar com regex
 function identificarTipoFuncao(funcao) {
-  if (/sin|cos|tan/.test(funcao)) {
-    console.log("ok")
-    return 'trigonometrica';
-  } else if (/x|\^x/.test(funcao)) {
-    console.log("Oi")
-    return 'polinomial';
-  } else if (/\+|\-/.test(funcao) && /x/.test(funcao)) {
-    console.log("Oi")
-    return 'somadiferença';
-  } else {
-    return 'outro';
+  const tiposFuncao = {
+    'sin|cos|tan': 'trigonometrica',
+    '\\^x|x': 'polinomial',
+    '\\+|\\-': 'somadiferença'
+  };
+
+  for (let padrao in tiposFuncao) {
+    if (new RegExp(padrao).test(funcao)) {
+      console.log("ok");
+      return tiposFuncao[padrao];
+    }
   }
+  return 'outro';
 }
+
+
+
+
+
+
+
+// // Testando função de identificar com regex
+// function identificarTipoFuncao(funcao) {
+//   if (/sin|cos|tan/.test(funcao)) {
+//     console.log("ok")
+//     return 'trigonometrica';
+//   } else if (/x|\^x/.test(funcao)) {
+//     console.log("Oi")
+//     return 'polinomial';
+//   } else if (/\+|\-/.test(funcao) && /x/.test(funcao)) {
+//     console.log("Oi")
+//     return 'somadiferença';
+//   } else {
+//     return 'outro';
+//   }
+// }
 
 
 //  Função para identificar os o tipo de função em relação ao input
