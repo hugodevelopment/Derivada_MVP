@@ -214,7 +214,7 @@ button{
   height: 44px;
   line-height: 1;
   margin: 12px 0 0;
-  margin-left: 30px;
+  margin-left: 40px;
   outline: none;
   overflow: hidden;
   padding: 0 15px;
@@ -226,7 +226,7 @@ button{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 20%;
+  width: 30%;
 }
 
 button{
