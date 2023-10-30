@@ -337,15 +337,18 @@ h1:hover {
     flex-direction: column;
     /* espaçamento da coluna */
     gap: 1.5rem;
-    margin-left: -5%;
+    margin-left: -1em;
     list-style: none;
 }
 
-.links-ul .footer-link:hover {
-    color: black;
-    transition: all 0.8s;
+.links-ul li a{
+  color:black;
 }
 
+.links-ul .footer-link:hover {
+    color: rgb(140, 149, 207);
+    transition: all 0.8s;
+}
 
 #copyright {
     display: flex;
