@@ -289,7 +289,7 @@ h1:hover {
 
 /* Aqui modificamos o conteudo do div para criamos o footer */
 #div-conteudo {
-    background-color: rgb(140, 149, 207);
+    background-color:rgb(195, 208, 228);
     /* display grid para estiliziarmos o conteudo */
     display: grid;
     /* Aqui criamos 4 colunas com espaço de 1fr entre elas */
@@ -301,11 +301,14 @@ h1:hover {
   color:black;
 }
 
-#div-conteudo h1:hover {
+#div-conteudo h1{
   color:  black;
-  transition: all 0.8s;
 }
 
+#div-conteudo h1:hover {
+  color: rgb(140, 149, 207);
+  transition: all 0.8s;
+}
 
 
 #Quem-Somos{
