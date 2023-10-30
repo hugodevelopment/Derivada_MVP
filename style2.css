@@ -337,6 +337,7 @@ h1:hover {
     flex-direction: column;
     /* espaçamento da coluna */
     gap: 1.5rem;
+    margin-left: -5%;
     list-style: none;
 }
 
