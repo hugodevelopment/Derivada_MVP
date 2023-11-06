@@ -82,7 +82,8 @@ const tiposDeFuncao = {
   ],
   somadiferença: [
     { descricao: 'Passo 1: Identifique a função:', equacao: `f(x) = ${funcao}` },
-    { descricao: 'Passo 2: Aplicar a regra da soma e diferença Mmama meu pau', equacao: `f\'(x) = ${derivada.toString()}`  },
+    { descricao: 'Passo 1: Aplicando a regra da soma e diferença:', equacao: `f(x) = [\dfrac{d}{dx}[f(x)+g(x)]=\dfrac{d}{dx}f(x)+\dfrac{d}{dx}g(x)\]` },
+    { descricao: 'Passo 2: Aplicar a regra da soma e diferença', equacao: `f\'(x) = ${derivada.toString()}`  },
   ],
 };
 
