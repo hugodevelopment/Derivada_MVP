@@ -15,6 +15,7 @@
 // }
 
 
+// Função melhorada para identificar outros tipos de função como somadiferença
 function identificarTipoFuncao(funcao) {
   if (/sin|cos|tan/.test(funcao)) {
     console.log("ok")
