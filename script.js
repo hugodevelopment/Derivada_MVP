@@ -1,19 +1,3 @@
-// function identificarTipoFuncao(funcao) {
-//   const tiposFuncao = {
-//     'sin|cos|tan': 'trigonometrica',
-//     '\\^x|x': 'polinomial',
-//     '\\+|\\-': 'somadiferença'
-//   };
-
-//   for (let padrao in tiposFuncao) {
-//     if (new RegExp(padrao).test(funcao)) {
-//       console.log("ok");
-//       return tiposFuncao[padrao];
-//     }
-//   }
-//   return 'outro';
-// }
-
 
 // Função melhorada para identificar outros tipos de função como somadiferença
 function identificarTipoFuncao(funcao) {
@@ -81,8 +65,8 @@ const tiposDeFuncao = {
     { descricao: 'Passo 2: Aplicar a regra dos polinomios', equacao: `f\'(x) = ${derivada.toString()}`  },
   ],
   somadiferença: [
-    { descricao: 'Passo 1: Identifique a função:', equacao: `f(x) = ${funcao}` },
-    { descricao: 'Passo 2: Aplicando a regra da soma e diferença:', equacao: `f(x) = \\dfrac{d}{dx}[f(x)+g(x)]=\\dfrac{d}{dx}f(x)+\\dfrac{d}{dx}g(x)\]` },
+    { descricao: 'Passo 1: Identifique a função:', equacao: `f(x) = \\dfrac{d}{dx}(${funcao})`},
+    { descricao: 'Passo 2: Aplicando a regra da soma e diferença:', equacao: `f(x) = \\dfrac{d}{dx}(2x) + \\dfrac{d}{dx}`},
     { descricao: 'Passo 3: Aplicar a regra da soma e diferença', equacao: `f\'(x) = ${derivada.toString()}`},
   ],
 };
@@ -110,11 +94,17 @@ function adicionarEtapas(etapas) {
 
   //Cada loop é uma criação de um elemento na div, sendo o 1º a div, depois o paragrafo e o span
   etapas.forEach((passo) => {
+    // criando o elemento div para aparecer na tela
     const passoDiv = document.createElement('div');
-    passoDiv.classList.add('etapa');
 
+    // a classe ‘etapa’ está sendo adicionada ao elemento passoDiv. 
+    // Isso significa que todos os estilos CSS associados à classe ‘etapa’ serão aplicados ao elemento passoDiv.
+    passoDiv.classList.add('etapa'); 
+    
+    // Aqui esta criando o elemento da descrição para aparecer na tela, nesse é um elemento do tipo paragrafo
     const descricao = document.createElement('p');
     console.log(descricao)
+    // Aqui ele recebe o valor descrição do elemento passo
     descricao.textContent = passo.descricao;
     descricao.style.color= "darkred";
     descricao.style.fontWeight="bold";
